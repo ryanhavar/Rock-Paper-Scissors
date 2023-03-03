@@ -1,0 +1,470 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  gap: 50px;
+  
+  
+
+}
+
+
+.other {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  align-items: end;
+
+  gap: 20px;
+}
+
+
+.rock,
+.paper,
+.scissors {
+  width: 120px;
+  height: auto;
+  transition:  0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+
+.rock {
+  width: 130px 
+}
+
+
+
+
+.rock:active,
+.paper:active,
+.scissors:active {
+  transform: scale(10);
+
+  
+  
+}
+
+.title {
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+  cursor:pointer;
+/** opacity: 0.75; **/
+filter: brightness(0.7);
+transform: scale(1.5);
+
+}
+
+
+.rock:active,
+.paper:active,
+.scissors:active {
+  transform: scale(3);
+
+  
+  
+}
+
+
+
+.gamebox {
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right, red 0%, rgba(233, 42, 179, 0.937)  50%, purple  100%);
+  
+  transition: 0.5s;
+  box-shadow: 0 0 200px purple;
+  border: 10px pink;
+  border-style:double;
+  
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+.gamebox:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgb(251, 87, 207);
+  text-decoration: none;
+}
+
+
+
+.ok {
+  font-size: 30px;
+  transition: all 0.2s ease;
+  
+}
+
+
+.ok:hover {
+  transform: scale(1.5);
+  box-shadow: 1px 1px 1px 5px black;
+
+
+
+}
+
+.ok:active {
+
+  
+}
+
+
+
+.onhover {
+  transition: all 0.2s ease;
+  
+}
+.onhover:hover {
+  
+  /* transform: scale(1.5); -- THIS IS THE RYAN HOVER.*/
+  
+  
+}
+
+#ryanword {
+  text-align: center;
+  font-size: 18px;
+   width: 300px;
+   height: 40px;
+   margin-top: 0;
+   font-family: 'Courier Prime';
+   border: 5px white;
+  border-style: groove;
+  
+}
+
+
+/* #player {
+  text-align: center;
+  font-size: 25px;
+} */
+
+
+.user {
+  
+  text-align: center;
+  font-size: 25px;
+  width: 100px;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 800;
+
+  
+}
+
+
+
+
+.ryane {
+text-align: center;
+font-size: 25px;
+margin-bottom:0;
+width: 150px;
+font-family: 'Alexandria', sans-serif;
+font-weight: 800;
+color: #ff001e;
+
+
+}
+
+body {
+
+  background-image: url("https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+
+}
+
+
+
+
+
+
+.ryane,
+.user {
+  background-color: white;
+  border-radius: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+
+
+
+#ryanword /*,
+#player*/ {
+  background-color: rgb(0, 238, 255);
+  border-radius: 18px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 400px turquoise;
+  font-weight: bolder;
+  color: #ff001e;
+  
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  
+ 
+ 
+  font-family: 'Waterfall', cursive;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+#v {
+  font-family: 'Climate Crisis', cursive;
+    font-weight: 500;
+    font-size: 170px;
+    color: #ff00ae;
+     text-shadow: 0px 0px 0px #ff00d4,
+                 0px 0px 0px #ff00d4,
+                 0px 0px 10px #ff00d4,
+                 10px 0px 0px #ff00d4,
+                 0px 0px 0px #ff00d4;   
+
+   
+    
+  }
+  
+
+#r {
+  font-weight: 700;
+  color: #ff00ae;
+  text-shadow: 0px 0px 10px #ff00d4,
+                 0px 0px 100px #ff00d4,
+                 0px 0px 100px #ff00d4,
+                 0px 0px 200px #ff00d4,
+                 0px 0px 300px #ff00d4;   
+
+  
+ 
+}
+
+
+#you {
+  font-weight: 100;
+  font-size: 50px;
+ font-family: 'Waterfall';
+ color: #ff00ae;
+ text-shadow: 0px 0px 10px #ff00d4,
+ 0px 0px 100px #ff00d4,
+ 0px 0px 100px #ff00d4,
+ 0px 0px 200px #ff00d4,
+ 0px 0px 300px #ff00d4;   
+
+
+
+  
+}
+
+
+
+.sword {
+  margin-top: 40px;
+  width: 200px;
+   position: relative;
+  top: 40px;
+ 
+
+}
+
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.middlebutton {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-family: 'Michroma', sans-serif;
+  width: 270px;
+  font-size: 20px;
+  
+  
+ 
+}
+
+.star,
+.staruser {
+  margin-bottom: 0;
+  text-align: center;
+  height: 20px;
+
+ 
+}
+
+
+.staruser {
+  animation: popIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.thestaruser,
+.thestar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 20px;
+}
+
+
+.user {
+  margin-bottom: 0;
+ 
+}
+
+
+
+
+
+.playerdialogue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(0, 238, 255);
+    border-radius: 18px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 400px turquoise;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 18px;
+    font-family: 'Courier Prime';
+    border: 5px white;
+    border-style:groove;
+  
+
+}
+
+
+
+
+.userUI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+
+
+
+
+.onhover {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+
+
+lord-icon {
+  margin-top: 0;
+}
+
+
+
+
+#result {
+  animation: popIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.sword,
+.animation {
+  animation: popIn 0.5s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
